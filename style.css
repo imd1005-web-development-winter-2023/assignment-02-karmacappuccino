@@ -1,3 +1,322 @@
 /*
-  CSS File
+  Colour palette: 
+  -- black --
+  #000000
+  -- white --
+  #eeeeee
+
+  -- background colour -- 
+  #edd9b8
+
+  -- dark grey table --
+  #e0dfdf
+
+  -- light grey table -- 
+  #ededed
+
+  -- border colour --
+  #a7a5a5
+
+  -- button colour --
+  #704a42
+
 */
+
+
+/*Page style*/
+html {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+.page {
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  resize: none;
+
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  background-color: #F0D9B7;
+}
+
+/* Header */
+header {
+  padding: 20px 20px;
+}
+
+.header-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.header-banner-title {
+  display: flex;
+  height: 40px;
+}
+
+.header-banner-nav ul {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-banner-nav2 ul {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-banner-nav ul a {
+  font-weight: 100;
+  color: #000;
+}
+
+.header-banner-nav2 ul a {
+  font-weight: 100;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-;
+  align-content: flex-end;
+
+}
+
+.hero-image {
+  display: flex;
+  justify-content: left;
+  align-self: flex-end;
+}
+
+.hero-content {
+  display: flex;
+
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.hero-content-title {
+  display: flex;
+  line-height: 2em;
+  font-size: 25px;
+  padding-top: 50px;
+  padding-left: 80px;
+  align-self: flex-start
+}
+
+.hero-content-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+  padding-top: 10px;
+  padding-left: 80px;
+}
+
+ul.hero-content-box {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 20px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  gap: 1rem;
+}
+
+ul.hero-content-box li {
+  flex: 1;
+  padding: 10px;
+
+  background-color: #F9F9F9;
+}
+
+/*---Main Content: Sub section 1: Our Philosophy---*/
+
+.sub-section-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  margin: 0px;
+  background-color: #F9EFE1;
+
+}
+
+.section-1-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.section-1-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+/*---Main Content: Sub section 2: Our Services---*/
+
+.sub-section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-2-title {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-left: 80px;
+  font-size: 30px;
+}
+
+/*Sub section 2: Table - Services and Prices */
+table {
+  border-collapse: collapse;
+  margin-left: 80px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-2-table thead tr {
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.section-2-table td {
+  padding: 12px 15px;
+}
+
+.section-2-table tbody tr:nth-of-type(even) {
+  background-color: #ededed;
+}
+
+.section-2-table tbody tr:nth-of-type(odd) {
+  background-color: #e0dfdf;
+}
+
+/*Sub section 2: Image insert*/
+.hair-salon {
+  display: flex;
+  justify-content: left;
+
+}
+
+/*---Main content: Sub section 3: Top Rated Products---*/
+.sub-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9EFE1;
+}
+
+.section-3-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 70px;
+  font-size: 30px;
+
+}
+
+.section-3-content {
+  display: flex;
+  list-style-type: none;
+  padding: 20px 358px 0 358px;
+
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+  font-size: 20px;
+  gap: 2em;
+}
+
+/*---Main Content: HTML form: Newsletter subsription---*/
+
+.html-form {
+  display: flex;
+  padding: 180px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  background-color: #F9EFE1;
+}
+
+.html-form-title {
+  display: flex;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.email ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+
+button {
+  padding: 0 12px 0 12px;
+  font-weight: 500;
+  color: white;
+  background-color: #705A42;
+}
+
+/*---Footer---*/
+.footer {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: left;
+  align-self: flex-end;
+}
